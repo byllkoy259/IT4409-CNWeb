@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+
+#root {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 25px;
+}
+
+h4 {
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* Search */
+input[type="text"] {
+  width: 300px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  height: 40px;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #4CAF50;
+}
+
+/* Buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  margin-right: 8px;
+  margin-bottom: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  height: 40px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Nút Sửa - màu vàng */
+td button:first-child {
+  background-color: #FFA500;
+}
+
+td button:first-child:hover {
+  background-color: #FF8C00;
+}
+
+/* Nút Xóa - màu đỏ */
+td button:last-child {
+  background-color: #f44336;
+}
+
+td button:last-child:hover {
+  background-color: #da190b;
+}
+
+/* Form */
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+label input {
+  margin-left: 10px;
+  padding: 6px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 250px;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  text-align: left;
+}
+
+td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+  background-color: #f9f9f9;
+}
+
+/* Loading */
+div {
+  color: #666;
+}
