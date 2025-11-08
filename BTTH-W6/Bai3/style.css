@@ -1,0 +1,341 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #4a3728;
+    background-color: #faf8f5;
+}
+
+header {
+    background: #6b4423;
+    color: #fff;
+    padding: 1.5rem 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+    border: 3px solid #f5e6d3;
+    object-fit: cover;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 3rem;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(139, 111, 71, 0.1);
+}
+
+section h2 {
+    color: #6b4423;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 3px solid #d4a574;
+    padding-bottom: 0.5rem;
+}
+
+section p {
+    font-size: 1.1rem;
+    color: #5a4a3a;
+}
+
+#product-list {
+    background-color: #fcf9f4;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.product-item {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(139, 111, 71, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-info {
+    width: 100%;
+    text-align: center;
+}
+
+.product-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(139, 111, 71, 0.15);
+}
+
+.product-item h3 {
+    color: #6b4423;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.product-item img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    display: block;
+    margin-bottom: 0;
+    border-radius: 8px;
+}
+
+.product-item p {
+    color: #5a4a3a;
+    margin: 0.5rem 0;
+}
+
+.product-item p.price {
+    color: #8b6f47;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.contact-form {
+    background-color: #fff9f0;
+}
+
+.contact-form form div {
+    margin-bottom: 1.5rem;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #6b4423;
+    font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid #e8d5b7;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #fffef9;
+    transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #6b4423;
+    background-color: #fff;
+}
+
+.contact-form button {
+    background: #6b4423;
+    color: #fff;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-form button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(139, 111, 71, 0.3);
+}
+
+.contact-form button:active {
+    transform: translateY(0);
+}
+
+footer {
+    background-color: #6b4423;
+    color: #f5e6d3;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 3rem;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.search-box {
+    display: flex;
+    flex: 1;
+    min-width: 250px;
+}
+
+.controls input[type="text"] {
+    flex: 1;
+    padding: 0.8rem;
+    border: 2px solid #e8d5b7;
+    border-radius: 5px 0 0 5px; 
+    font-size: 1rem;
+    background-color: #fffef9;
+    transition: border-color 0.3s ease;
+    border-right: none;
+}
+
+.controls input[type="text"]:focus {
+    outline: none;
+    border-color: #6b4423;
+    background-color: #fff;
+}
+
+#searchBtn {
+    background: #6b4423;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#addProductBtn, #cancelBtn {
+    background: #6b4423;
+    color: #fff;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#cancelBtn {
+    background-color: #8b6f47;
+}
+
+#addProductBtn:hover, #cancelBtn:hover, #searchBtn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(139, 111, 71, 0.3);
+}
+
+.contact-form form div:last-child {
+    display: flex;
+    gap: 1rem;
+}
+
+@media (max-width: 768px) {
+    .header-top {
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    section {
+        padding: 1.5rem;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .product-item img {
+        width: 100%;
+        max-width: none;
+        margin-bottom: 1.5rem;
+        border-radius: 8px 8px 0 0;
+    }
+
+    .controls {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .search-box {
+        width: 100%;
+    }
+
+    #addProductBtn {
+        width: 100%;
+        text-align: center;
+    }
+}

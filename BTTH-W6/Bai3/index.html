@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiểu Bảo Coffee</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <img src="TieuBaoLogo.png" alt="Tiểu Bảo Coffee Logo" class="logo">
+            <h1>Tiểu Bảo Coffee</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Sản phẩm</a></li>
+                <li><a href="#">Liên hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Chào mừng đến với Tiểu Bảo Coffee</h2>
+            <p>Nơi cung cấp những tách cà phê ngon nhất cho bạn!</p>
+        </section>
+
+        <section class="controls">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Tìm kiếm sản phẩm...">
+                <button id="searchBtn">Tìm</button>
+            </div>
+            <button id="addProductBtn">Thêm sản phẩm mới</button>
+        </section>
+
+        <section class="contact-form hidden" id="addProductForm">
+            <h2>Thêm sản phẩm mới</h2>
+            <form>
+                <div>
+                    <label for="newName">Tên sản phẩm:</label>
+                    <input type="text" id="newName" name="newName" required>
+                </div>
+                <div>
+                    <label for="newPrice">Giá (VNĐ):</label>
+                    <input type="number" id="newPrice" name="newPrice" required>
+                </div>
+                <div>
+                    <label for="newDesc">Mô tả:</label>
+                    <textarea id="newDesc" name="newDesc" rows="3"></textarea>
+                </div>
+                <div>
+                    <label for="newImage">Link ảnh:</label>
+                    <input type="text" id="newImage" name="newImage">
+                </div>
+                
+                <p id="errorMsg" style="color:red;"></p>
+
+                <div>
+                    <button type="submit">Thêm</button>
+                    <button type="button" id="cancelBtn">Hủy</button>
+                </div>
+            </form>
+        </section>
+
+        <section id="product-list">
+            <h2>Sản phẩm của chúng tôi</h2>
+            <div class="product-grid">
+                <article class="product-item">
+                    <img src="https://thuytinhocean.com/wp-content/uploads/2024/08/hinh-anh-ly-cafe-den-da-16.jpg" alt="Cà phê Đen đá">
+                    <div class="product-info">
+                        <h3 class="product-name">Cà phê Đen đá</h3>
+                        <p>Hương vị đậm đà, nguyên chất từ hạt cà phê Robusta.</p>
+                        <p class="price">Giá: 25.000 VNĐ</p>
+                    </div>
+                </article>
+
+                <article class="product-item">
+                    <img src="https://f5cafe.com/wp-content/uploads/2020/06/ca_phe_sua_da.jpg" alt="Cà phê Sữa đá">
+                    <div class="product-info">
+                        <h3 class="product-name">Cà phê Sữa đá</h3>
+                        <p>Sự kết hợp hoàn hảo giữa vị đắng cà phê và vị ngọt của sữa đặc.</p>
+                        <p class="price">Giá: 30.000 VNĐ</p>
+                    </div>
+                </article>
+
+                <article class="product-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg1rq8JGE54uMTjLsJnN2dthAsDK7YtV7tKg&s" alt="Bạc xỉu">
+                    <div class="product-info">
+                        <h3 class="product-name">Bạc xỉu</h3>
+                        <p>Nhiều sữa ít cà phê, phù hợp cho người mới bắt đầu.</p>
+                        <p class="price">Giá: 35.000 VNĐ</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="contact-form">
+            <h2>Liên hệ</h2>
+            <form>
+                <div>
+                    <label for="name">Họ và tên:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="message">Lời nhắn:</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                </div>
+                <button type="submit">Gửi</button>
+            </form>
+        </section>
+
+        </main>
+
+    <footer>
+        <p>&copy; 2025 Tiểu Bảo Coffee - Hương vị cà phê đích thực</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
